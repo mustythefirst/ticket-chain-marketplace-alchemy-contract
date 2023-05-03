@@ -6,10 +6,10 @@ async function main() {
 
   console.log("Account balance:", (await deployer.getBalance()).toString());
 
-  const NFTMarketplace = await ethers.getContractFactory("NFTMarketplace");
-  const nftmarketplace = await NFTMarketplace.deploy();
+  const Ticketchain = await ethers.getContractFactory("Ticketchain");
+  const ticketchain = await Ticketchain.deploy();
 
-  console.log("NFTMarketplace address:", nftmarketplace.address);
+  console.log("Ticketchain address:", ticketchain.address);
 }
 
 main()
